@@ -172,9 +172,6 @@ Ranked List of Candidates (Streamlit UI)
 ## 👤 Author
 
 **Trailokya**
-Data Science | AI/ML Projects
-📍 Kolhapur, Maharashtra, India
-
 ---
 
 
