@@ -29,27 +29,26 @@ An intelligent resume screening system that automatically screens resumes agains
 AI_Resume_Screening/
 │
 ├── data/
-│ ├── resumes/
-│ ├── job_descriptions/
+│   ├── resumes/                  # Input PDF resumes
+│   └── job_descriptions/         # Job description text files
 │
 ├── models/
-│ ├── embedding_model/
+│   └── embedding_model/          # Saved SentenceTransformer model
 │
 ├── src/
-│ ├── parser.py
-│ ├── preprocess.py
-│ ├── vectorizer.py
-│ ├── matcher.py
-│ ├── ranker.py
-│ ├── skill_extractor.py
-│
-├── app.py # Streamlit / Flask
+│   ├── parser.py                 # PDF text extraction (pdfplumber)
+│   ├── preprocess.py             # Text cleaning & lemmatization (nltk)
+│   ├── vectorizer.py             # Semantic embeddings (SentenceTransformer)
+│   ├── matcher.py                # Cosine similarity scoring (sklearn)
+│   ├── ranker.py                 # Ranks candidates by match score
+│   └── skill_extractor.py        # Skill extraction (skillNer + spaCy)
 │
 ├── utils/
-│ ├── helpers.py
+│   └── helpers.py                # Shared utility functions
 │
-├── requirements.txt
-├── README.md
+├── app.py                        # Streamlit UI entry point
+├── requirements.txt              # Project dependencies
+└── README.md
 ```
 
 ---
