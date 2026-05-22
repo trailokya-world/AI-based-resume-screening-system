@@ -28,13 +28,28 @@ An intelligent resume screening system that automatically screens resumes agains
 ```
 AI_Resume_Screening/
 │
-├── app.py                   # Streamlit UI entry point
-├── resume_parser.py         # PDF text extraction
-├── preprocessor.py          # Text cleaning and lemmatization
-├── skill_extractor.py       # Skill extraction using skillNer
-├── scorer.py                # Cosine similarity scoring
-├── requirements.txt         # Project dependencies
-└── README.md
+├── data/
+│ ├── resumes/
+│ ├── job_descriptions/
+│
+├── models/
+│ ├── embedding_model/
+│
+├── src/
+│ ├── parser.py
+│ ├── preprocess.py
+│ ├── vectorizer.py
+│ ├── matcher.py
+│ ├── ranker.py
+│ ├── skill_extractor.py
+│
+├── app.py # Streamlit / Flask
+│
+├── utils/
+│ ├── helpers.py
+│
+├── requirements.txt
+├── README.md
 ```
 
 ---
@@ -131,19 +146,6 @@ Ranked List of Candidates (Streamlit UI)
 
 ---
 
-## 📊 Scoring
-
-The system uses **cosine similarity** on normalized embeddings to compute a match score between 0 and 1:
-
-| Score Range | Interpretation     |
-|-------------|-------------------|
-| 0.80 – 1.00 | Excellent Match ✅ |
-| 0.60 – 0.79 | Good Match 👍     |
-| 0.40 – 0.59 | Partial Match ⚠️  |
-| 0.00 – 0.39 | Poor Match ❌     |
-
----
-
 ## 🛠️ Tech Stack
 
 | Tool | Purpose |
@@ -170,13 +172,13 @@ The system uses **cosine similarity** on normalized embeddings to compute a matc
 
 ## 👤 Author
 
-**Pawan**
+**Trailokya**
 Data Science | AI/ML Projects
 📍 Kolhapur, Maharashtra, India
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License.
+
+
 
