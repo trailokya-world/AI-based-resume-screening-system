@@ -1,0 +1,9 @@
+pdfplumber
+nltk
+joblib
+sentence-transformers
+scikit-learn
+spacy
+numpy
+pandas
+skillNer
