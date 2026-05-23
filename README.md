@@ -106,7 +106,6 @@ skillNer
 streamlit
 pydantic>=2.0
 ```
-
 ---
 
 ## 🚀 Run the App
