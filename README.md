@@ -170,9 +170,9 @@ Ranked List of Candidates (Streamlit UI)
 
 ## Interface
 
-<img src="C:\Users\PAWAN\OneDrive\Pictures\Screenshots\Screenshot 2026-06-09 104601.png" alt="Alternative Text" width="500">
+![Input](C:\Users\PAWAN\OneDrive\Pictures\Screenshots\Screenshot 2026-06-09 104601.png)
 
-<img src="C:\Users\PAWAN\OneDrive\Pictures\Screenshots\Screenshot 2026-06-09 104913.png" alt="Alternative Text" width="500">
+![Outut](C:\Users\PAWAN\OneDrive\Pictures\Screenshots\Screenshot 2026-06-09 104913.png)
 ## 👤 Author
 
 **Trailokya**
