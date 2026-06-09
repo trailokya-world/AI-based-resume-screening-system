@@ -10,3 +10,4 @@ skillNer
 torch
 torchvision
 ipython
+en-core-web-sm

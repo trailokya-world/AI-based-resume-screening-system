@@ -5,7 +5,7 @@ from spacy.matcher import PhraseMatcher
 import re
 
 
-nlp = spacy.load("en_core_web_lg")
+nlp = spacy.load("en_core_web_sm")
 skill_extractor_model = SkillExtractor(nlp, SKILL_DB, PhraseMatcher)
 
 
@@ -60,7 +60,7 @@ def skillner_extract(text):
         ngram_matches = [
             s["doc_node_value"].lower().strip()
             for s in annotations["results"]["ngram_scored"]
-            if s["score"] >= 0.7          # ✅ filter low confidence matches
+            if s["score"] >= 0.7          
         ]
         return set(full_matches + ngram_matches)
 
